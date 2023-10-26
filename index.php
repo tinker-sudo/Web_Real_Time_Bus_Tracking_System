@@ -10,10 +10,10 @@
 <body>
     <h1>Testing Database Insert Server</h1 </body>
 
-    <form action="insert.php">
+    <form action="insert.php" method="post">
         <p>Please enter your name and age</p>
         <input type="text" name="name">
-        <input type="age" name="age">
+        <input type="number" name="age">
         <button>Submit</button>
 
     </form>

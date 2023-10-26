@@ -1,16 +1,16 @@
 <?php
 
-$name = "name";
-$age = "age";
+$name = $_POST['name'];
+$age = $_POST['age'];
 
 
-$conn = new mysqli("localhost", "root", "", "testing");
+$conn = new mysqli("localhost", "root", "password", "testing");
 
 if ($conn->connect_error) {
     die("Connection error: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO user_info (name, age) VALUES ('$name', '$age')";
+$sql = "INSERT INTO user_info (Name, Age) VALUES ('$name', '$age')";
 
 
 
